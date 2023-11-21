@@ -1,0 +1,37 @@
+.video-view-area .video-view-top {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 1rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.video-view-area .video-view-top img {
+  width: 500px;
+  height: 500px;
+}
+
+.video-view-area .function-box {
+  background-color: var(--white);
+  width: 150px;
+  height: 200px;
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  font-weight: 700;
+}
+.video-view-area .function-box P {
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.video-view-area .video-view-bottom {
+  margin-top: 2rem;
+  background-color: var(--white);
+  height: 100px; /*height는 편하신대로 수정해주세요*/
+  text-align: center;
+}

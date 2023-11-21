@@ -3,7 +3,7 @@ import { ReactComponent as MikeSVG } from "assets/microphone.svg";
 
 /**
  * projectName을 인자로 받아 띄워주는 헤더 컴포넌트
- * @param {*} param0
+ * @param {*} projectName 프로젝트 이름 설정
  * @returns
  */
 const Header = ({ projectName }) => {

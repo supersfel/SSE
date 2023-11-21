@@ -1,6 +1,7 @@
 /* COMPONETS CSS*/
 @import "./componets/header.css";
 @import "./componets/thumbnail.css";
+@import "./componets/videoview.css";
 
 /* PAGE */
 @import "./pages/home.css";
