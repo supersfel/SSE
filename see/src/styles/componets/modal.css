@@ -23,6 +23,8 @@
 .video-modal-bottom {
   display: flex;
   justify-content: center;
+
+  gap: 1rem;
 }
 
 .video-modal-bottom button {
@@ -31,4 +33,15 @@
   border-radius: 10px;
   color: var(--white);
   font-weight: 700;
+}
+
+/* 시간 변경 모달*/
+.time-change-modal {
+  padding-top: 3rem;
+}
+
+.time-change-modal .time-box {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }

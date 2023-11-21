@@ -4,7 +4,7 @@
 @import "./componets/videoview.css";
 
 /* MODAL */
-@import "./componets/modal/videomodal.css";
+@import "./componets/modal.css";
 
 /* PAGE */
 @import "./pages/home.css";

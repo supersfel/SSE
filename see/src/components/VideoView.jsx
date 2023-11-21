@@ -2,11 +2,16 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { FILEPATH } from "utils/enum";
 import VideoModal from "./Modal/VideoModal.jsx";
+import { THUMNAILDUMMY } from "utils/dummy.js";
 
 const VideoView = () => {
   const filename = useParams().filename;
-  console.log(`${FILEPATH}/${filename}`);
 
+  const fileData = THUMNAILDUMMY.filter(
+    (v) => v.thumbnailPath === `${FILEPATH}/${filename}`
+  )[0];
+
+  console.log(fileData);
   const [modalType, setModalType] = useState("");
 
   const offModal = () => {
@@ -32,7 +37,11 @@ const VideoView = () => {
         </div>
       </div>
       <div className="video-view-bottom">video의 흐름을 펼쳐서 보여주는 곳</div>
-      <VideoModal offModal={offModal} type={modalType}></VideoModal>
+      <VideoModal
+        fileData={fileData}
+        offModal={offModal}
+        type={modalType}
+      ></VideoModal>
     </div>
   );
 };

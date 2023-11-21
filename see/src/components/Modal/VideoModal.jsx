@@ -3,33 +3,41 @@ import TimeChangeModal from "./TimeChangeModal.jsx";
 import ShortChangeModal from "./AppendChangeModal.jsx";
 import EffectModal from "./EffectModal.jsx";
 
-const VideoModal = ({ offModal, type }) => {
+const VideoModal = ({ offModal, type, fileData }) => {
   const modalContent = (type) => {
     switch (type) {
       case "time":
-        return <TimeChangeModal></TimeChangeModal>;
+        return (
+          <TimeChangeModal
+            timeLocation={fileData.timeLocation}
+            offModal={offModal}
+          ></TimeChangeModal>
+        );
       case "appendFront":
-        return <ShortChangeModal></ShortChangeModal>;
+        return <ShortChangeModal offModal={offModal}></ShortChangeModal>;
       case "appendBack":
-        return <ShortChangeModal></ShortChangeModal>;
+        return <ShortChangeModal offModal={offModal}></ShortChangeModal>;
       case "effect":
-        return <EffectModal></EffectModal>;
+        return <EffectModal offModal={offModal}></EffectModal>;
       default:
         return <></>;
     }
   };
   if (type === "") return <></>;
-  return (
-    <div className="video-modal">
-      <div className="video-modal-top">{modalContent(type)}</div>
 
-      <div className="video-modal-bottom">
-        <button onClick={offModal} className="succes">
-          확인
-        </button>
-      </div>
-    </div>
-  );
+  const clickAppendFrontSuccessBtn = () => {
+    //영상 앞부분 로직 추가
+    alert("영상 앞부분 추가~");
+  };
+  const clickAppendBackSuccessBtn = () => {
+    //영상 뒷부분 로직 추가
+    alert("영상 뒷부분 추가~");
+  };
+  const clickEffectBtn = () => {
+    /*효과 로직 추가 */
+  };
+
+  return <div className="video-modal">{modalContent(type)}</div>;
 };
 
 export default VideoModal;
