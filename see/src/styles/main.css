@@ -1,2 +1,6 @@
-/* HEADER CSS*/
+/* COMPONETS CSS*/
 @import "./componets/header.css";
+@import "./componets/thumbnail.css";
+
+/* PAGE */
+@import "./pages/home.css";
