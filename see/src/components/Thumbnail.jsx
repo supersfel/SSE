@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+/**
+ *
+ * @param {*} thumbnailPath 파일 URL (풀 URL입니다)
+ * @param {*} timeLocation 00:00:00.000 형식으로 들어오는 영상 길이 정보
+ * @param {*} width 섬네일 길이
+ * @returns
+ */
 const Thumbnail = ({ thumbnailPath, timeLocation, width }) => {
   // 제목 만들어주는 함수 (필요하시면 그냥 subject를 인수로 받아오셔도 괜찮을 듯 합니다.)
   const makeSubject = (str) => {

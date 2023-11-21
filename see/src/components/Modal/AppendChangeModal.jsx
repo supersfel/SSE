@@ -3,12 +3,18 @@ import React, { useState } from "react";
 import { THUMNAILDUMMY } from "utils/dummy";
 import { FILEPATH } from "utils/enum";
 
+/**
+ * 쇼츠 추가 컴포넌트
+ * @param {*} offModal 모달 종료하게 하는 함수
+ *  @param {*} isFront 영상이 앞에 추가인지 뒤에 추가인지 확인
+ * @returns
+ */
 const AppendChangeModal = ({ offModal, isFront }) => {
   const initialVideo = {
     thumbnailPath: "",
     timeLocation: "00:00:00.000",
   };
-  //더미데이터 형식으로 비디오 선택
+  //더미데이터 형식으로 저장해뒀습니다. <= 후에 videoId등으로 바꾸시면 됩니다.
   const [checkedVideo, setCheckedVideo] = useState(initialVideo);
 
   const checkVideo = (idx) => {

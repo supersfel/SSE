@@ -1,9 +1,15 @@
 import React, { useState } from "react";
 
+/**
+ * 효과적용 모달
+ * @param {*} offModal 모달 종료하게 하는 함수
+ * @returns
+ */
 const EffectModal = ({ offModal }) => {
   const [effectType, setEffectType] = useState("None");
   const [executeTime, setExecuteTime] = useState(0);
 
+  // 반복문으로 컴포넌트 생성을 위한 정보들 저장
   const typeAry = ["FadeIn", "FadeOut", "ZoomIn", "ZoomOut", "None"];
   const mentAry = [
     "Fade in (서서히 나타나기)",

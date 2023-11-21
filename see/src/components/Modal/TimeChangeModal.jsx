@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import { convertToMilliseconds, convertToTimeString } from "utils/time";
 
+/**
+ * 시간변경 함수
+ * @param {*} timeLocation 00:00:00.000 형식으로 들어오는 영상 길이 정보
+ * @param {*} offModal 모달 종료하게 하는 함수
+ * @returns
+ */
 const TimeChangeModal = ({ timeLocation, offModal }) => {
   const totalMilliSeconds = convertToMilliseconds(timeLocation);
   const makeTimeString = (timeRange) => {
