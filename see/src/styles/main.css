@@ -3,5 +3,9 @@
 @import "./componets/thumbnail.css";
 @import "./componets/videoview.css";
 
+/* MODAL */
+@import "./componets/modal/videomodal.css";
+
 /* PAGE */
 @import "./pages/home.css";
+@import "./pages/video.css";

@@ -1,6 +1,7 @@
 .home {
   font-size: 1.8rem;
   color: var(--white);
+  background-color: var(--main-gray);
 }
 
 .home .home-ment {
