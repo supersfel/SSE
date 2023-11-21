@@ -35,10 +35,6 @@ const VideoModal = ({ offModal, type, fileData }) => {
   };
   if (type === "") return <></>;
 
-  const clickEffectBtn = () => {
-    /*효과 로직 추가 */
-  };
-
   return <div className="video-modal">{modalContent(type)}</div>;
 };
 
