@@ -1,0 +1,11 @@
+/* COMMON.CSS - 색상 , 길이 등 전체적인 속성 설정*/
+
+:root {
+  --main-gray: #222222;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+* {
+  background-color: var(--main-gray);
+}
