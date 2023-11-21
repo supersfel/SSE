@@ -3,6 +3,14 @@ import TimeChangeModal from "./TimeChangeModal.jsx";
 import AppendChangeModal from "./AppendChangeModal.jsx";
 import EffectModal from "./EffectModal.jsx";
 
+
+/**
+ * 
+ * @param {*} offModal 모달 종료하게 하는 함수
+ * @param {*} type 모달의 타입(어느 기능을 설정할지 정보)
+ * @param {*} fileData 현재 보고있는 비디오정보 <= 이역시 현재 더미데이터 사용
+ * @returns 
+ */
 const VideoModal = ({ offModal, type, fileData }) => {
   const modalContent = (type) => {
     switch (type) {

@@ -4,6 +4,10 @@ import { FILEPATH } from "utils/enum";
 import VideoModal from "./Modal/VideoModal.jsx";
 import { THUMNAILDUMMY } from "utils/dummy.js";
 
+/**
+ * 비디오 편집 부분 컴포넌트
+ * @returns 
+ */
 const VideoView = () => {
   const filename = useParams().filename;
 
