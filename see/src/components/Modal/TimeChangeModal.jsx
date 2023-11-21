@@ -12,8 +12,9 @@ const TimeChangeModal = ({ timeLocation, offModal }) => {
   const [maxTimeRange, setMaxTimeRange] = useState(50);
 
   const clickTimeSuccessBtn = () => {
-    //시간 변경 로직 추가
+    //시간 변경 로직 들어갈 곳
     alert("시간변경~");
+    offModal();
   };
 
   return (

@@ -45,3 +45,27 @@
   gap: 1rem;
   margin-bottom: 2rem;
 }
+
+/* 쇼츠 추가 모달 */
+.change-short-modal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  height: 100%;
+  overflow: scroll;
+}
+.change-short-modal .img-box {
+  position: relative;
+}
+
+.change-short-modal .img-box img {
+  width: 100px;
+  cursor: pointer;
+}
+
+.change-short-modal .img-box .checked-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

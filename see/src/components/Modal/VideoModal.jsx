@@ -1,6 +1,6 @@
 import React from "react";
 import TimeChangeModal from "./TimeChangeModal.jsx";
-import ShortChangeModal from "./AppendChangeModal.jsx";
+import AppendChangeModal from "./AppendChangeModal.jsx";
 import EffectModal from "./EffectModal.jsx";
 
 const VideoModal = ({ offModal, type, fileData }) => {
@@ -14,9 +14,19 @@ const VideoModal = ({ offModal, type, fileData }) => {
           ></TimeChangeModal>
         );
       case "appendFront":
-        return <ShortChangeModal offModal={offModal}></ShortChangeModal>;
+        return (
+          <AppendChangeModal
+            offModal={offModal}
+            isFront={true}
+          ></AppendChangeModal>
+        );
       case "appendBack":
-        return <ShortChangeModal offModal={offModal}></ShortChangeModal>;
+        return (
+          <AppendChangeModal
+            offModal={offModal}
+            isFront={false}
+          ></AppendChangeModal>
+        );
       case "effect":
         return <EffectModal offModal={offModal}></EffectModal>;
       default:
@@ -25,14 +35,6 @@ const VideoModal = ({ offModal, type, fileData }) => {
   };
   if (type === "") return <></>;
 
-  const clickAppendFrontSuccessBtn = () => {
-    //영상 앞부분 로직 추가
-    alert("영상 앞부분 추가~");
-  };
-  const clickAppendBackSuccessBtn = () => {
-    //영상 뒷부분 로직 추가
-    alert("영상 뒷부분 추가~");
-  };
   const clickEffectBtn = () => {
     /*효과 로직 추가 */
   };
