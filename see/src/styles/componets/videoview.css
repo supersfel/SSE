@@ -12,6 +12,10 @@
   height: 500px;
 }
 
+.video-view-area .video-box {
+  position: relative;
+}
+
 .video-view-area .function-box {
   background-color: var(--white);
   width: 150px;
@@ -23,6 +27,7 @@
   align-items: center;
   border-radius: 10px;
   font-weight: 700;
+  position: absolute;
 }
 .video-view-area .function-box P {
   background-color: var(--white);
