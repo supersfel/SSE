@@ -67,7 +67,13 @@ const VideoView = () => {
           ) : null}
         </div>
       </div>
-      <div className="video-view-bottom">video의 흐름을 펼쳐서 보여주는 곳</div>
+      <div className="video-view-bottom">
+        {Array(10)
+          .fill(0)
+          .map((_) => (
+            <img src={`/${FILEPATH}/${filename}`} alt="섬넬" width={100} />
+          ))}
+      </div>
       <VideoModal
         fileData={fileData}
         offModal={offModal}
